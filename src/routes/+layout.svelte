@@ -37,13 +37,11 @@
 						<a href="/">Xiyuan (Tommy) Guo</a>
 					</h1>
 					<h2 class="text-cloud-dim mt-3 text-lg font-medium tracking-tight sm:text-xl">
-						Computer Science Student
+						Systems | Software Engineer
 					</h2>
 					<p class="text-cloud-dim mt-4 max-w-xs leading-normal">
-						Building high-performance systems for quantitative finance. Creator of
-						<span class="text-reze">difi</span> and
-						<span class="text-reze">zsweep</span>
-						(HN #5 & #6).
+						Architecting high-performance systems and low-latency terminal architecture
+						for power users.
 					</p>
 
 					<nav class="mt-16 hidden lg:block">
