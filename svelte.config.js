@@ -1,12 +1,7 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 
 export default {
 	kit: {
-		adapter: adapter({
-			fallback: '404.html'
-		}),
-		paths: {
-			base: ''
-		}
+		adapter: adapter()
 	}
 };
