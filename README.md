@@ -1,42 +1,10 @@
-# sv
+<div align="center">
+  <h1><code>Portfolio</code></h1>
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+  <a href="https://zsweep.com">
+    <img width="2560" height="1258" alt="image" src="https://github.com/user-attachments/assets/1e6eeb15-6a10-4e17-be74-3b702b2d4379" />
+  </a>
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+<p align="center"> Made with ❤️ by <a href="https://github.com/oug-t">oug-t</a> </p>
