@@ -8,5 +8,5 @@
 ---
 
 <p align="center">
-  Coded with ☕ by <a href="https://github.com/xguot">oug-t</a>
+  Coded with ☕ by <a href="https://github.com/xguot">xguot</a>
 </p>
