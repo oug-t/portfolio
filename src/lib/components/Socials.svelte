@@ -1,6 +1,6 @@
 <script>
 	const links = [
-		{ name: 'GitHub', url: 'https://github.com/oug-t', icon: 'github' },
+		{ name: 'GitHub', url: 'https://github.com/xguot', icon: 'github' },
 		{ name: 'LinkedIn', url: 'https://linkedin.com/in/xiyuan-tommy-guo', icon: 'linkedin' },
 		{ name: 'Email', url: 'mailto:tommyguo024@outlook.com', icon: 'mail' }
 	];

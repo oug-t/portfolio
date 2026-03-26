@@ -39,8 +39,8 @@
 			description:
 				'A high-performance CLI tool built in Go for interactive Git diff reviews. Features a keyboard-centric Terminal User Interface (TUI) with a file tree and editor-aware navigation, allowing users to jump directly to specific lines in Neovim/Vim for rapid code refinement.',
 			tags: ['Go', 'Bubble Tea', 'Git API', 'CLI', 'Nvim Plugin'],
-			link: 'https://github.com/oug-t/difi',
-			stars: 230,
+			link: 'https://github.com/xguot/difi',
+			stars: 321,
 			thumbnail: '/difi-demo.gif',
 			hnRanking: 6,
 			hnLink: 'https://news.ycombinator.com/item?id=46870917'
@@ -51,7 +51,7 @@
 				'A performance-focused reimagining of Minesweeper with a "Monkeytype" aesthetic. Engineered for flow-state with native Vim-bindings (h/j/k/l), real-time 3BV/s metrics, and a global leaderboard integrated via Supabase for competitive play.',
 			tags: ['Svelte', 'TypeScript', 'Vim', 'Supabase', 'Full-Stack'],
 			link: 'https://zsweep.com',
-			stars: 53,
+			stars: 59,
 			thumbnail: '/zsweep-demo.gif',
 			hnRanking: 6,
 			hnLink: 'https://news.ycombinator.com/item?id=46667849'
@@ -61,7 +61,7 @@
 			description:
 				'Contributed multiple Pull Requests to the Neovim core (C/Lua). Focused on Lua state change and ENV variable config supporting Vim logic.',
 			tags: ['C', 'Lua', 'Open Source', 'Systems'],
-			link: 'https://github.com/neovim/neovim/pulls?q=is%3Apr+author%3Aoug-t+',
+			link: 'https://github.com/neovim/neovim/pulls?q=is%3Apr+author%3Axguot+',
 			stars: '90k+',
 			thumbnail: '/nvim-demo.png'
 		},
@@ -192,7 +192,7 @@
 	</div>
 	<div class="mt-12">
 		<a
-			href="https://github.com/oug-t?tab=repositories"
+			href="https://github.com/xguot?tab=repositories"
 			target="_blank"
 			rel="noreferrer"
 			class="group text-cloud hover:text-reze inline-flex items-center leading-tight font-semibold transition-colors"
