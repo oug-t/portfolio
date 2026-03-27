@@ -116,27 +116,27 @@
 		I’m a software engineer focused on the intersection of
 		<span class="text-cloud font-medium">quantitative finance</span> and
 		<span class="text-cloud font-medium">distributed systems</span>. I specialize in building
-		high-performance <span class="text-cloud font-medium">Svelte</span> applications that bridge the
-		gap between complex backend logic and intuitive, low-latency user interfaces.
+		high-performance <span class="text-cloud font-medium">Svelte</span> applications that bridge the gap
+		between complex backend logic and intuitive, low-latency user interfaces.
 	</p>
 
 	<p class="text-cloud-dim mb-4 leading-relaxed">
 		Currently, I am focused on architecting terminal-centric tooling and reactive web systems,
 		notably as the creator of <span class="text-cloud font-medium">difi</span> and
-		<span class="text-cloud font-medium">zsweep</span> (HN #5 & #6). Beyond my own projects, I
-		am an <span class="text-cloud font-medium">Open Source Contributor</span> to Neovim and
-		Statue. I’m also deep-diving into market microstructure—working through
-		<span class="text-cloud font-medium">The Green Book</span> to apply systems engineering rigor
-		to quantitative finance.
+		<span class="text-cloud font-medium">zsweep</span> (HN #5 & #6). Beyond my own projects, I am an
+		<span class="text-cloud font-medium">Open Source Contributor</span>
+		to Neovim and Statue. I’m also deep-diving into market microstructure—working through
+		<span class="text-cloud font-medium">The Green Book</span> to apply systems engineering rigor to quantitative
+		finance.
 	</p>
 
 	<p class="text-cloud-dim mb-4 leading-relaxed">
 		When I’m not at the terminal, you can usually find me at the
-		<span class="text-cloud font-medium">Muay Thai</span> gym, training calisthenics, or behind
-		a drum kit. I’m an avid off-roader in my
+		<span class="text-cloud font-medium">Muay Thai</span> gym, training calisthenics, or behind a
+		drum kit. I’m an avid off-roader in my
 		<span class="text-cloud font-medium">Tacoma TRD Pro</span>
-		and a heavy consumer of specialty coffee. I am currently completing my double major in Computer
-		Science and Mathematics at the
+		and a heavy consumer of specialty coffee. I am currently completing my double major in Computer Science
+		and Mathematics at the
 		<span class="text-cloud font-medium">University of Virginia</span>.
 	</p>
 </section>
@@ -145,9 +145,7 @@
 	<div
 		class="bg-bg-main/75 sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
 	>
-		<h2 class="text-cloud text-sm font-bold tracking-widest uppercase lg:sr-only">
-			Experience
-		</h2>
+		<h2 class="text-cloud text-sm font-bold tracking-widest uppercase lg:sr-only">Experience</h2>
 	</div>
 	<div class="flex flex-col gap-12">
 		{#each experience as job}
@@ -156,7 +154,7 @@
 	</div>
 	<div class="mt-12">
 		<a
-			href="/Xiyuan_Tommy_Guo_Resume.pdf"
+			href="/Xiyuan_Guo_Resume.pdf"
 			target="_blank"
 			rel="noreferrer"
 			class="group text-cloud hover:text-reze inline-flex items-center leading-tight font-semibold transition-colors"
