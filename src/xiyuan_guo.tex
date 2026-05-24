@@ -1,157 +1,129 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 % Packages
-\usepackage[left=0.1in, right=0.1in, top=0.15in, bottom=0.15in]{geometry}
+\usepackage[left=0.3in, right=0.3in, top=0.3in, bottom=0.3in]{geometry}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
+\usepackage{microtype} 
 
 % Hyperlinks
 \hypersetup{hidelinks}
 
-% Section Formatting
+% Section Formatting 
 \titleformat{\section}{
   \vspace{-6pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Custom list for flush-left alignment
-\newcommand{\resumeSubHeadingListStart}{
-    \begin{list}{}{
-        \setlength{\leftmargin}{0in}
-        \setlength{\labelwidth}{0pt}
-        \setlength{\labelsep}{0pt}
-        \setlength{\itemindent}{0pt}
-        \setlength{\topsep}{0pt}
-        \setlength{\partopsep}{0pt}
-    }
-}
+% Custom lists 
+\newcommand{\resumeSubHeadingListStart}{\begin{list}{}{
+    \setlength{\leftmargin}{0in}
+    \setlength{\labelwidth}{0pt}
+    \setlength{\labelsep}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{2pt} 
+    \setlength{\parsep}{0pt}
+}}
 \newcommand{\resumeSubHeadingListEnd}{\end{list}}
 
-% Custom list for ultra-tight bullet points
+% Pulled bullets up against their own title, but relaxed the space at the bottom
 \newcommand{\resumeItemListStart}{
-    \begin{list}{\textbullet}{
-        \setlength{\leftmargin}{0.15in}
-        \setlength{\labelwidth}{0.15in}
-        \setlength{\labelsep}{0.05in}
-        \setlength{\itemsep}{-1pt}
-        \setlength{\parsep}{0pt}
-        \setlength{\topsep}{0pt}
-        \setlength{\partopsep}{0pt}
-    }
-}
-\newcommand{\resumeItemListEnd}{\end{list}\vspace{-6pt}}
+  \vspace{-4pt}
+  \begin{list}{\textbullet}{
+    \setlength{\leftmargin}{0.15in}
+    \setlength{\labelwidth}{0.15in}
+    \setlength{\labelsep}{0.05in}
+    \setlength{\itemsep}{0pt} 
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+}}
+\newcommand{\resumeItemListEnd}{\end{list}\vspace{-1pt}}
 
-% Item command
-\newcommand{\resumeItem}[1]{
-  \item\small{#1}
-}
+\newcommand{\resumeItem}[1]{\item\small{#1}}
 
-% Single-line heading command for flattened layout
+% Heading structure
 \newcommand{\resumeHeading}[2]{
   \item[]
     \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
       #1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt} 
 }
 
 \begin{document}
 
 % Heading
 \begin{center}
-    {\Huge \scshape \textbf{Xiyuan (TOMMY) GUO}} \\ \vspace{2pt}
-    \small \href{mailto:tommyguo024@outlook.com}{tommyguo024@outlook.com} --- %
-    (516) 474-3279 --- %
-    \href{https://xguo.info}{xguo.info} --- %
-    \href{https://github.com/xguot}{github.com/xguot} --- %
-    \href{https://linkedin.com/in/xiyuan-tommy-guo}{linkedin.com/in/xiyuan-tommy-guo} %
+    {\Huge \scshape \textbf{Xiyuan GUO}} \\ \vspace{4pt}
+    \small \href{mailto:tommyguo024@outlook.com}{tommyguo024@outlook.com} --- (516) 474-3279 --- \href{https://xguo.info}{xguo.info} --- \href{https://github.com/xguot}{github.com/xguot}
 \end{center}
-\vspace{-8pt}
+\vspace{-10pt}
 
 % Education
 \section{EDUCATION}
   \resumeSubHeadingListStart
     \resumeHeading
       {\textbf{University of Virginia}}{Charlottesville, VA --- Sept 2024 -- May 2028 (Expected)}
-    \item[] \small \textbf{Degree:} Bachelor of Arts in Computer Science and Mathematics --- GPA: 3.89/4.00 \vspace{-1pt}
-    \item[] \small \textbf{Relevant Coursework:} Computer Systems \& Organization, Discrete Math \& Theory, Data Structures \& Algorithms \vspace{-6pt}
+    \item[] \small \textbf{Degree:} Bachelor of Arts in Computer Science and Mathematics --- GPA: 3.89/4.00 
+    \item[] \small \textbf{Relevant Coursework:} Quantum Mechanics, Linear Algebra, Data Structures \& Algorithms
   \resumeSubHeadingListEnd
 
 % Professional Experience
 \section{PROFESSIONAL EXPERIENCE}
   \resumeSubHeadingListStart
-
-    \resumeHeading
-      {\textbf{Full-Stack Developer, UVA (Ke's Group)} (Next.js, SQL, PHP)}{Charlottesville, VA --- Oct 2025 -- Present}
+    \resumeHeading{\textbf{Research Software Engineer, UVA (Ke's Group)}}{Charlottesville, VA --- Oct 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Developed a comprehensive full-stack research platform utilizing Next.js and a PHP backend, architecting a unified SQL database to catalog rare earth element properties and facilitate global academic data retrieval.}
-        \resumeItem{Engineered a custom data integration pipeline using Go to aggregate high-dimensional material parameters and JSON machine learning outputs into a centralized relational database, streamlining the transition to production.}
-        \resumeItem{Created immersive data visualizations using the Three.js rendering engine and JSmol, generating interactive 3D atomic models and Kiviat diagrams to enable real-time structural inspection by investigators globally.}
-        \resumeItem{Orchestrated high-availability Linux web infrastructure and server-side security, integrating OAuth 2.0 and custom Role-Based Access Control (RBAC) layers to enforce multi-tenant permissions and guarantee data integrity.}
+        \resumeItem{Orchestrated the end-to-end deployment of a highly available full-stack research platform on RHEL virtual machines, independently configuring all server-side web infrastructure, robust network security protocols, and relational database storage architectures.}
+        \resumeItem{Applied quantum mechanics principles to engineer complex Density Functional Theory (DFT) reconstruction algorithms, bridging theoretical atomic modeling with robust software implementations to accurately catalog rare earth element electronic material properties.}
+        \resumeItem{Engineered a cloud-native machine learning pipeline utilizing Go and Next.js, enabling global academic collaborators to securely share specialized material datasets and execute pre-trained deep predictive models via an intuitive interactive web interface.}
+        \resumeItem{Created immersive, browser-based data visualizations using Three.js and JSmol, generating dynamic interactive 3D atomic models and Kiviat diagrams to facilitate the real-time structural inspection and validation of complex theoretical computational modeling outputs.}
       \resumeItemListEnd
 
-    \resumeHeading
-      {\textbf{Research Assistant, Yale University (Liu's Group)} (ML, CNN, PyTorch)}{New Haven, CT --- Feb 2026 -- Present}
+    \resumeHeading{\textbf{Machine Learning Assistant, Yale (Liu's Group)}}{New Haven, CT --- Feb 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Developing specialized U-Net architectures in PyTorch, integrating physics-informed constraints to reconstruct high-fidelity 3D volumes from raw computational sensor data and depth-dependent point spread functions (PSFs).}
-        \resumeItem{Engineered high-concurrency 3D data voxelization and physics-based simulation engines in Go, achieving a 50x performance increase in preprocessing throughput to significantly accelerate end-to-end training cycles.}
-        \resumeItem{Solving complex inverse problems in computational imaging by implementing high-dimensional optimization frameworks, leveraging ADMM and Augmented Lagrange Multipliers to optimize reconstruction accuracy.}
-        \resumeItem{Evaluating the architectural efficacy of novel Convolutional Physics-Informed Neural Networks by benchmarking performance against diverse datasets, ensuring model robustness compared to existing computational baselines.}
-        \resumeItem{Collaborating with researchers at Yonsei University to incorporate specialized PSF datasets, facilitating advanced optical modeling to optimize model convergence for varied apertures and sensor configurations.}
+        \resumeItem{Formulated a deep unrolled ADMM framework to solve ill-posed inverse problems in computational imaging, reconstructing multi-dimensional data encompassing spatial, spectral, and full-Stokes polarization domains across vast parameter spaces exceeding $10^6$ dimensions.}
+        \resumeItem{Engineered a specialized PyTorch pipeline utilizing a custom convolutional U-Net architecture as a learned proximal operator, specifically designed to mitigate non-Gaussian hardware sensor noise and yielding a 4.5 dB increase in PSNR over standard computational baselines.}
+        \resumeItem{Implemented rigorous physics-informed constraints within custom deep learning model optimization loops, mathematically grounding complex vectorial Stokes parameter representations utilizing complex numbers, trigonometric formulations, and 3D Poincaré sphere mappings.}
+        \resumeItem{Evaluated the architectural efficacy of novel Convolutional Physics-Informed Neural Networks against optical datasets, demonstrating that strictly constraining the multi-dimensional loss optimization landscape reduces spurious background image artifacting by well over 35\%.}
       \resumeItemListEnd
 
-    \resumeHeading
-      {\textbf{Quantitative Analyst Intern, Hangzhou Landscaping} (Python, Go)}{Hangzhou, China --- Jun 2024 -- Aug 2024}
+    \resumeHeading{\textbf{Quantitative Researcher, UVA (BAL Lab)}}{Charlottesville, VA --- Apr 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Engineered quantitative financial models using Python (Pandas, NumPy) to evaluate over \$500,000 in procurement assets, automating cash-flow simulations and ROI analysis to optimize project viability and transparency.}
-        \resumeItem{Developed a comprehensive risk-management framework by identifying, assessing, and monitoring key operational risks across 10,000+ transaction records utilizing statistical scoring models and scenario-based sensitivity analysis.}
-        \resumeItem{Architected a high-throughput financial pipeline in Go, modeling asset price movements via normal distributions to compute VaR and optimize capital allocation. Validated models through rigorous statistical backtesting.}
+        \resumeItem{Engineered a mathematical framework for multivariate longitudinal missing data imputation that enforces the Law of Total Variation, mitigating severe structural covariance bias inherent in unconstrained predictive machine learning models (missForest, missRanger, mice).}
+        \resumeItem{Formulated a novel Lagrange-constrained optimization engine, deriving custom matrix calculus gradients from first principles to mathematically project non-parametric Random Forest estimates onto a strictly defined smooth Riemannian positive-semidefinite (PSD) manifold.}
+        \resumeItem{Architected a custom high-performance C++17 gradient descent solver via RcppArmadillo to iteratively evaluate dual Lagrangian multipliers, ensuring the final global variance of the imputed dataset converges to strict theoretical asymptotic population statistical expectations.}
+        \resumeItem{Designed a Manifold Mapping pipeline utilizing robust statistical estimators (Spearman and MAD) to bound the highly non-convex search optimization space, scaling dense matrix operations across Slurm HPC clusters for massive Monte Carlo full-grid simulations.}
       \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
-
-% Projects
-\section{PROJECTS}
-  \resumeSubHeadingListStart
-    \resumeHeading
-      {\textbf{Creator \& Lead Maintainer}, difi (Go, Bubble Tea)}{Dec 2025 -- Present}
+    \resumeHeading{\textbf{Network Science Intern, UVA Biocomplexity Institute}}{Charlottesville, VA --- May 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Engineered a Go-based Git diff TUI using Bubble Tea and Neovim, optimizing developer productivity by streamlining complex version control workflows and facilitating intuitive git diffs for pre-PR code reviews.}
-        \resumeItem{Spearheaded an active open-source ecosystem through 90+ commits to release v1.0.10, managing issue triage and integrating global pull requests; drove adoption to 320+ GitHub stars and secured \#6 on Hacker News.}
-        \resumeItem{Achieved official inclusion into the Homebrew core repository, navigating stringent maintainer reviews to streamline cross-platform distribution for macOS and Linux, effectively scaling adoption to over 1,000 active developers.}
-      \resumeItemListEnd
-
-    \resumeHeading
-      {\textbf{Open-Source Contributor}, Neovim (Lua, C)}{May 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Engineered high-performance, Lua-based Neovim core optimizations, navigating strict code style guidelines and rigorous PR review processes to contribute low-latency workflow enhancements to an ecosystem of 100,000+ developers.}
-      \resumeItemListEnd
-
-    \resumeHeading
-      {\textbf{Creator \& Lead Engineer}, zsweep (TypeScript, SvelteKit)}{Dec 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Engineered a zero-latency Vim-emulated Minesweeper engine utilizing a custom Finite State Machine and Supabase; integrated community assets across 200+ commits, scaling to 10,000+ users during a \#5 Hacker News launch.}
+        \resumeItem{Formulated massive-scale network simulations to dynamically model the stochastic spread of viral pathogens (e.g., COVID-19 and Ebola), implementing SEIR compartmental cascade models to capture heterogeneous transmission dynamics across global populations.}
+        \resumeItem{Engineered attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways, leveraging spatiotemporal message-passing frameworks to extract predictive latent topological features from large-scale dynamic contact networks.}
+        \resumeItem{Collaborated within a transdisciplinary initiative to scale core epidemiological algorithms, bridging high-performance Bayesian data science methodologies with empirical public health parameters to inform and optimize proactive global disaster resilience strategies.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-% Certifications and Skills
-\section{CERTIFICATIONS \& SKILLS}
+% Awards & Honors
+\section{AWARDS \& HONORS}
  \resumeItemListStart
-    \item \small{\textbf{Languages:} Go, Python, C/C++, TypeScript/JavaScript, Java, Lua, Bash, R, Ruby, Lean, SQL, \LaTeX}
-    \item \small{\textbf{Frameworks \& Libraries:} PyTorch, TensorFlow, React, Next.js, SvelteKit, Bubble Tea, Pandas}
-    \item \small{\textbf{Developer Tools \& Cloud:} AWS (Beanstalk, Aurora), CUDA, QEMU, HPC/Slurm, Supabase, Make, Git, Nvim/tmux}
-    \item \small{\textbf{Certifications:} AWS Certified AI Practitioner, AWS Certified Cloud Practitioner, USACO Silver}
+    \item \small{\textbf{Double Hoo Research Award:} Secured competitive grant funding to drive independent, interdisciplinary computational research.}
+    \item \small{\textbf{Academic Honors:} USA Computing Olympiad (USACO) Silver Division; UVA Dean's List of Distinguished Students.}
+    \item \small{\textbf{Open-Source Recognition:} Achieved Hacker News Front Page (\#5, \#6), Homebrew Core inclusion, and 342+ GitHub stars for \texttt{difi}.}
  \resumeItemListEnd
 
-% Leadership
-\section{LEADERSHIP}
-  \resumeSubHeadingListStart
-    \resumeHeading
-      {\textbf{Firefighter}, Plainfield Fire Department}{Plainfield, NH --- Sept 2022 -- Apr 2024}
-      \resumeItemListStart
-        \resumeItem{Executed rapid situational assessments and critical decision-making across 100+ annual high-pressure emergency responses.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+% Certifications & Skills
+\section{CERTIFICATIONS \& SKILLS}
+ \resumeItemListStart
+    \item \small{\textbf{Math \& Science:} Quantum Mechanics, Density Functional Theory (DFT), Linear \& Tensor Algebra, Real Analysis, ODEs}
+    \item \small{\textbf{Machine Learning \& AI:} PyTorch, TensorFlow, Keras, JAX, Scikit-Learn, XGBoost, Pandas, NumPy, OpenCV, RcppArmadillo}
+    \item \small{\textbf{DevOps \& Cloud:} Linux (RHEL/Fedora), AWS (EC2, S3), Docker, Kubernetes, CUDA, Slurm HPC, Git, CI/CD, Supabase, Sway, Nvim}
+    \item \small{\textbf{Frameworks \& Web:} React, Next.js, SvelteKit, Node.js, FastAPI, Bubble Tea, GraphQL, REST APIs, TailwindCSS}
+    \item \small{\textbf{Languages:} Python, C/C++, Rust, Go, TypeScript, JavaScript, R, Julia, SQL, Lua, Bash, Java, \LaTeX}
+    \item \small{\textbf{Certifications:} AWS Certified AI Practitioner, AWS Certified Cloud Practitioner
+ \resumeItemListEnd
 
 \end{document}
