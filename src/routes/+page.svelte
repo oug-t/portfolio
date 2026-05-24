@@ -2,7 +2,6 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
 	import CertificationCard from '$lib/components/CertificationCard.svelte';
-	import resumePdf from '$lib/assets/resume.pdf';
 
 	const experience = [
 		{
@@ -164,7 +163,7 @@
 	</div>
 	<div class="mt-12">
 		<a
-			href={resumePdf}
+			href="/resume.pdf"
 			target="_blank"
 			rel="noreferrer"
 			class="group text-cloud hover:text-reze inline-flex items-center leading-tight font-semibold transition-colors"
