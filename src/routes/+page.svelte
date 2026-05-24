@@ -2,34 +2,44 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
 	import CertificationCard from '$lib/components/CertificationCard.svelte';
+	import resumePdf from '../build/xiyuan_guo.pdf';
 
 	const experience = [
 		{
-			date: '2025 — PRESENT',
-			title: 'Full-Stack Developer',
-			company: 'UVA Research Laboratory',
+			date: 'MAY 2026 — PRESENT',
+			title: 'Network Science Intern',
+			company: 'UVA Biocomplexity Institute',
 			description:
-				'Engineered a scalable research platform to catalog rare earth element properties. Developed immersive Three.js 3D atomic visualizations and architected high-performance PostgreSQL schemas on Amazon Aurora, reducing data retrieval latency by 40% for global academic retrieval.',
-			skills: ['Node.js', 'Three.js', 'AWS EC2', 'PostgreSQL', 'Docker', 'OAuth 2.0'],
+				'Formulating massive-scale network simulations to model the stochastic spread of viral pathogens. Engineering attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways across dynamic contact networks.',
+			skills: ['GNN', 'Network Science', 'Simulation', 'Bayesian Data Science', 'HPC'],
+			link: 'https://biocomplexity.virginia.edu/'
+		},
+		{
+			date: 'APR 2026 — PRESENT',
+			title: 'Quantitative Researcher',
+			company: 'UVA (BAL Lab)',
+			description:
+				'Engineering a mathematical framework for longitudinal missing data imputation. Formulated a novel Lagrange-constrained optimization engine and architected a high-performance C++17 gradient descent solver to ensure global variance convergence.',
+			skills: ['C++', 'RcppArmadillo', 'Statistics', 'Optimization', 'Manifold Mapping'],
 			link: 'https://www.virginia.edu/'
 		},
 		{
-			date: 'MAY — AUG 2025',
-			title: 'Software Engineer',
-			company: 'Camden Nurseries',
+			date: 'FEB 2026 — PRESENT',
+			title: 'Machine Learning Assistant',
+			company: 'Yale (Liu\'s Group)',
 			description:
-				'Developed a full-stack e-commerce platform managing 200+ retail products. Optimized transaction processing using AWS CloudFront edge locations and leveraged AWS Elastic Beanstalk to ensure 99.9% system availability during peak operational usage.',
-			skills: ['React', 'Node.js', 'AWS CloudFront', 'Elastic Beanstalk', 'APIs'],
-			link: 'https://www.camdennurseries.com.au/'
+				'Developing a deep unrolled ADMM framework for inverse problems in computational imaging. Engineering a specialized PyTorch pipeline with custom U-Net architectures and physics-informed constraints for multi-dimensional data reconstruction.',
+			skills: ['PyTorch', 'ML', 'ADMM', 'Computer Vision', 'Physics-Informed Neural Networks'],
+			link: 'https://liu.yale.edu/'
 		},
 		{
-			date: 'JUN — AUG 2024',
-			title: 'Quantitative Analyst',
-			company: 'Hangzhou Landscaping',
+			date: 'OCT 2025 — PRESENT',
+			title: 'Research Software Engineer',
+			company: 'UVA (Ke\'s Group)',
 			description:
-				'Engineered financial models using Python to evaluate $500,000 in procurement assets. Developed a risk-management framework monitoring 10,000+ transactions through Monte Carlo simulations, RSI indicators, and regression-based forecasting to optimize capital allocation.',
-			skills: ['Python', 'Pandas', 'NumPy', 'Monte Carlo', 'Risk Management', 'Statistics'],
-			link: 'https://www.sunnystone.cn/'
+				'Orchestrating the deployment of a high-availability full-stack research platform. Applying quantum mechanics principles for DFT reconstruction algorithms and engineering a cloud-native ML pipeline using Go and Next.js.',
+			skills: ['Go', 'Next.js', 'RHEL', 'Three.js', 'DFT', 'Machine Learning'],
+			link: 'https://www.virginia.edu/'
 		}
 	];
 
@@ -40,7 +50,7 @@
 				'A high-performance CLI tool built in Go for interactive Git diff reviews. Features a keyboard-centric Terminal User Interface (TUI) with a file tree and editor-aware navigation, allowing users to jump directly to specific lines in Neovim/Vim for rapid code refinement.',
 			tags: ['Go', 'Bubble Tea', 'Git API', 'CLI', 'Nvim Plugin'],
 			link: 'https://github.com/xguot/difi',
-			stars: 321,
+			stars: 342,
 			thumbnail: '/difi-demo.gif',
 			hnRanking: 6,
 			hnLink: 'https://news.ycombinator.com/item?id=46870917'
@@ -154,7 +164,7 @@
 	</div>
 	<div class="mt-12">
 		<a
-			href="/Xiyuan_Guo_Resume.pdf"
+			href={resumePdf}
 			target="_blank"
 			rel="noreferrer"
 			class="group text-cloud hover:text-reze inline-flex items-center leading-tight font-semibold transition-colors"
