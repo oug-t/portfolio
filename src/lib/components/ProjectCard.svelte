@@ -8,7 +8,7 @@
 	export let hnRanking: string | number | null = null;
 	export let hnLink: string | null = null;
 
-	let divElement: HTMLAnchorElement;
+	let divElement: HTMLDivElement;
 	let mouseX = 0;
 	let mouseY = 0;
 	let opacity = 0;
