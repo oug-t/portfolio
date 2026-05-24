@@ -26,10 +26,7 @@
 	}
 </script>
 
-<a
-	href={link}
-	target="_blank"
-	rel="noreferrer"
+<div
 	bind:this={divElement}
 	on:mousemove={handleMouseMove}
 	on:mouseleave={handleMouseLeave}
@@ -40,9 +37,12 @@
 		style="background: radial-gradient(600px circle at {mouseX}px {mouseY}px, rgba(179, 146, 240, 0.1), transparent 40%); opacity: {opacity};"
 	></div>
 
-	<div
-		class="lg:group-hover:bg-bg-card/50 absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]"
-	></div>
+	<a
+		href={link}
+		target="_blank"
+		rel="noreferrer"
+		class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-bg-card/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]"
+	></a>
 
 	{#if thumbnail}
 		<div class="z-10 mb-4 w-32 pt-1 sm:col-span-3 sm:mb-0 sm:w-auto">
@@ -62,7 +62,10 @@
 			: 'sm:col-span-8'} flex flex-col justify-center"
 	>
 		<h3 class="text-cloud text-lg leading-snug font-medium">
-			<span
+			<a
+				href={link}
+				target="_blank"
+				rel="noreferrer"
 				class="text-cloud group-hover:text-reze inline-flex items-baseline leading-tight font-medium transition-colors"
 			>
 				{title}
@@ -77,7 +80,7 @@
 						clip-rule="evenodd"
 					/>
 				</svg>
-			</span>
+			</a>
 		</h3>
 
 		<p class="text-cloud-dim mt-2 text-sm leading-normal">
@@ -86,16 +89,13 @@
 
 		<div class="mt-3 flex items-center gap-4">
 			{#if hnRanking}
-				<object type="internal/link">
-					<a
-						href={hnLink}
-						target="_blank"
-						on:click|stopPropagation
-						class="text-cloud-dim flex items-center gap-1.5 font-mono text-xs transition-colors hover:text-[#ff6600]"
-					>
-						<span class="font-bold text-[#ff6600]">Y</span> HN #{hnRanking}
-					</a>
-				</object>
+				<a
+					href={hnLink}
+					target="_blank"
+					class="text-cloud-dim relative z-20 flex items-center gap-1.5 font-mono text-xs transition-colors hover:text-[#ff6600]"
+				>
+					<span class="font-bold text-[#ff6600]">Y</span> HN #{hnRanking}
+				</a>
 			{/if}
 
 			{#if stars}
@@ -118,4 +118,4 @@
 			{/each}
 		</ul>
 	</div>
-</a>
+</div>

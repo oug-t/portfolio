@@ -2,7 +2,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
 	import CertificationCard from '$lib/components/CertificationCard.svelte';
-	import resumePdf from '../build/xiyuan_guo.pdf';
+	import resumePdf from '$lib/assets/resume.pdf';
 
 	const experience = [
 		{
