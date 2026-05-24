@@ -21,7 +21,7 @@
 			description:
 				'Engineering a mathematical framework for longitudinal missing data imputation. Formulated a novel Lagrange-constrained optimization engine and architected a high-performance C++17 gradient descent solver to ensure global variance convergence.',
 			skills: ['C++', 'RcppArmadillo', 'Statistics', 'Optimization', 'Manifold Mapping'],
-			link: 'https://www.virginia.edu/'
+			link: 'https://xtong.org/'
 		},
 		{
 			date: 'FEB 2026 — PRESENT',
