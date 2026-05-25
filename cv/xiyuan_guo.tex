@@ -1,0 +1,159 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Packages
+\usepackage[left=0.3in, right=0.3in, top=0.3in, bottom=0.3in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{microtype} 
+
+% Hyperlinks
+\hypersetup{hidelinks}
+
+% Section Formatting 
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom lists 
+\newcommand{\resumeSubHeadingListStart}{\begin{list}{}{
+    \setlength{\leftmargin}{0in}
+    \setlength{\labelwidth}{0pt}
+    \setlength{\labelsep}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{2pt} 
+    \setlength{\parsep}{0pt}
+}}
+\newcommand{\resumeSubHeadingListEnd}{\end{list}}
+
+% Pulled bullets up against their own title, but relaxed the space at the bottom
+\newcommand{\resumeItemListStart}{
+  \vspace{-2pt}
+  \begin{list}{\textbullet}{
+    \setlength{\leftmargin}{0.15in}
+    \setlength{\labelwidth}{0.15in}
+    \setlength{\labelsep}{0.05in}
+    \setlength{\itemsep}{0pt} 
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+}}
+\newcommand{\resumeItemListEnd}{\end{list}\vspace{0pt}}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% Heading structure
+\newcommand{\resumeHeading}[2]{
+  \item[]
+    \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-4pt} 
+}
+
+\begin{document}
+
+% Heading
+\begin{center}
+    {\Huge \scshape \textbf{Xiyuan GUO}} \\ \vspace{4pt}
+    \small \href{mailto:tommyguo024@outlook.com}{tommyguo024@outlook.com} --- (516) 474-3279 --- \href{https://xguo.info}{xguo.info} --- \href{https://github.com/xguot}{github.com/xguot}
+\end{center}
+\vspace{-10pt}
+
+% Education
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeHeading
+      {\textbf{University of Virginia}}{Charlottesville, VA --- Sept 2024 -- May 2028 (Expected)}
+    \item[] \small \textbf{Degree:} Double Major in Behavioral Neuroscience and Computer Science --- GPA: 3.89/4.00 
+  \resumeSubHeadingListEnd
+
+% Professional Experience
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeHeading{\textbf{Research Software Engineer, UVA (Prof. Liqin Ke's Group)}}{Charlottesville, VA --- Oct 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Applied quantum mechanics principles to engineer complex Density Functional Theory (DFT) reconstruction algorithms, 
+        bridging theoretical atomic modeling with robust software implementations to accurately catalog electronic material properties.}
+        \resumeItem{Engineered a cloud-native machine learning pipeline utilizing Go and Next.js, 
+        enabling global academic collaborators to securely share specialized datasets and execute pre-trained predictive models.}
+        \resumeItem{Created immersive, browser-based data visualizations using Three.js and JSmol, 
+        generating interactive 3D atomic models and Kiviat diagrams to facilitate the real-time structural inspection and validation.}
+      \resumeItemListEnd
+    \vspace{2pt}
+    \resumeHeading{\textbf{Machine Learning Assistant, Yale (Prof. Mengxia Liu's Group)}}{New Haven, CT --- Feb 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Formulated a deep unrolled ADMM framework to solve ill-posed inverse problems in computational imaging, 
+        reconstructing multi-dimensional data encompassing spatial, spectral, and full-Stokes polarization domains.}
+        \resumeItem{Engineered a specialized PyTorch pipeline utilizing a custom convolutional U-Net architecture as a learned proximal operator, 
+        specifically designed to mitigate non-Gaussian hardware sensor noise and yielding a 4.5 dB increase in PSNR.}
+        \resumeItem{Implemented rigorous physics-informed constraints within deep learning optimization loops, 
+        mathematically grounding vectorial Stokes parameter representations utilizing complex numbers, trigonometric formulations, and 3D Poincaré sphere mappings.}
+      \resumeItemListEnd
+    \vspace{2pt}
+    \resumeHeading{\textbf{Quantitative Researcher, UVA (Prof. Xin Cynthia Tong's BAL Lab)}}{Charlottesville, VA --- Apr 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered a mathematical framework for multivariate longitudinal missing data imputation that enforces the Law of Total Variation, 
+        mitigating structural covariance bias inherent in unconstrained predictive machine learning models.}
+        \resumeItem{Formulated a Lagrange-constrained optimization engine, deriving custom matrix calculus gradients from first principles 
+        to mathematically project non-parametric Random Forest estimates onto a positive-semidefinite (PSD) manifold.}
+        \resumeItem{Architected a custom high-performance C++17 gradient descent solver via RcppArmadillo to iteratively evaluate dual Lagrangian multipliers, 
+        ensuring the final global variance of the imputed dataset converges to strict theoretical asymptotic expectations.}
+      \resumeItemListEnd
+    \vspace{2pt}
+    \resumeHeading{\textbf{Network Science Intern, UVA Biocomplexity Institute}}{Charlottesville, VA --- May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Formulated massive-scale network simulations to dynamically model the stochastic spread of viral pathogens (e.g., COVID-19 and Ebola), 
+        implementing SEIR compartmental cascade models to capture heterogeneous transmission dynamics.}
+        \resumeItem{Engineered attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways, 
+        leveraging spatiotemporal message-passing frameworks to extract predictive topological features from dynamic contact networks.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Projects
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+    \resumeHeading{\textbf{Creator \& Lead Maintainer}, difi (Go, Bubble Tea)}{Dec 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered a high-performance Go-based Git diff terminal user interface utilizing the Bubble Tea framework to streamline version control workflows, 
+        achieving official Homebrew Core inclusion, 342+ GitHub stars, and a \#5 ranking on the Hacker News front page.}
+      \resumeItemListEnd
+    \resumeHeading{\textbf{Creator \& Lead Developer}, sanjaya (Python, Playwright, Scrapy)}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered an automated academic literature extraction pipeline utilizing the OpenAlex Academic Graph API, Scrapy, and Playwright to extract bilingual data, 
+        exporting structured .CSV and .JSON datasets for downstream interdisciplinary research applications.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Awards & Honors
+\section{AWARDS \& HONORS}
+    \vspace{2pt}
+ \resumeItemListStart
+    \item \small{\textbf{Double Hoo Research Award:} Secured competitive grant funding to drive independent, 
+    interdisciplinary computational research.}
+    \item \small{\textbf{Academic Honors:} USA Computing Olympiad (USACO) Silver Division; 
+    UVA Dean's List of Distinguished Students.}
+ \resumeItemListEnd
+
+% Certifications & Skills
+\section{CERTIFICATIONS \& SKILLS}
+    \vspace{2pt}
+ \resumeItemListStart
+    \item \small{\textbf{Math \& Science:} Quantum Mechanics, Density Functional Theory (DFT), 
+    Linear \& Tensor Algebra, Real Analysis, ODEs}
+    \item \small{\textbf{Machine Learning \& AI:} PyTorch, TensorFlow, Keras, JAX, Scikit-Learn, 
+    XGBoost, Pandas, NumPy, OpenCV, RcppArmadillo}
+    \item \small{\textbf{DevOps \& Cloud:} Linux (RHEL/Fedora), AWS (EC2, S3), Docker, Kubernetes, 
+    CUDA, Slurm HPC, Git, CI/CD, Supabase, Sway, Nvim}
+    \item \small{\textbf{Frameworks \& Web:} React, Next.js, SvelteKit, Node.js, FastAPI, 
+    Bubble Tea, GraphQL, REST APIs, TailwindCSS}
+    \item \small{\textbf{Languages:} Python, C/C++, Rust, Go, TypeScript, JavaScript, R, Julia, 
+    SQL, Lua, Bash, Java, \LaTeX}
+    \item \small{\textbf{Certifications:} AWS Certified AI Practitioner, 
+    AWS Certified Cloud Practitioner}
+ \resumeItemListEnd
+
+\end{document}
