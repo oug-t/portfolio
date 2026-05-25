@@ -7,6 +7,9 @@ node_modules
 .wrangler
 /.svelte-kit
 /build
+# LaTeX
+cv/build/*
+!cv/build/*.pdf
 src/build/
 
 # OS
