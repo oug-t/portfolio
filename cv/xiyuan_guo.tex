@@ -1,159 +1,134 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[11pt, letterpaper]{article}
 
-% Packages
-\usepackage[left=0.3in, right=0.3in, top=0.3in, bottom=0.3in]{geometry}
+% --- Packages ---
+\usepackage[margin=0.85in]{geometry} 
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{xcolor}
-\usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage{microtype} 
+\usepackage{mathpazo} % Palatino font for classic academic elegance
+\usepackage{microtype} % Superior typography and letter spacing
+\usepackage{enumitem} % Advanced list control
 
-% Hyperlinks
-\hypersetup{hidelinks}
+% --- Colors ---
+\definecolor{primary}{RGB}{0, 0, 0} 
+\definecolor{linkcolor}{RGB}{25, 84, 166} 
 
-% Section Formatting 
+% --- Hyperlinks ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,      
+    urlcolor=linkcolor,
+    pdftitle={Academic CV - Xiyuan GUO},
+}
+
+% --- Section Formatting ---
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{6pt}\Large\scshape\raggedright\bfseries\color{primary}
+}{}{0em}{}[\color{primary}\titlerule \vspace{6pt}]
 
-% Custom lists 
-\newcommand{\resumeSubHeadingListStart}{\begin{list}{}{
-    \setlength{\leftmargin}{0in}
-    \setlength{\labelwidth}{0pt}
-    \setlength{\labelsep}{0pt}
-    \setlength{\itemindent}{0pt}
-    \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0pt}
-    \setlength{\itemsep}{2pt} 
-    \setlength{\parsep}{0pt}
-}}
-\newcommand{\resumeSubHeadingListEnd}{\end{list}}
+% --- Custom CV Environments ---
+\newenvironment{cvitemize}{
+    \begin{itemize}[leftmargin=0.2in, label={\textbullet}, itemsep=4pt, parsep=0pt, topsep=4pt]
+}{
+    \end{itemize}
+}
 
-% Pulled bullets up against their own title, but relaxed the space at the bottom
-\newcommand{\resumeItemListStart}{
-  \vspace{-2pt}
-  \begin{list}{\textbullet}{
-    \setlength{\leftmargin}{0.15in}
-    \setlength{\labelwidth}{0.15in}
-    \setlength{\labelsep}{0.05in}
-    \setlength{\itemsep}{0pt} 
-    \setlength{\parsep}{0pt}
-    \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0pt}
-}}
-\newcommand{\resumeItemListEnd}{\end{list}\vspace{0pt}}
-
-\newcommand{\resumeItem}[1]{\item\small{#1}}
-
-% Heading structure
-\newcommand{\resumeHeading}[2]{
-  \item[]
-    \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-      #1 & #2 \\
-    \end{tabular*}\vspace{-4pt} 
+\newcommand{\cvheading}[4]{
+    \vspace{4pt}
+    \noindent\textbf{#1} \hfill #2 \\
+    #3 \hfill \textit{#4} \vspace{2pt}
 }
 
 \begin{document}
 
-% Heading
+% --- Heading ---
 \begin{center}
-    {\Huge \scshape \textbf{Xiyuan GUO}} \\ \vspace{4pt}
-    \small \href{mailto:tommyguo024@outlook.com}{tommyguo024@outlook.com} --- (516) 474-3279 --- \href{https://xguo.info}{xguo.info} --- \href{https://github.com/xguot}{github.com/xguot}
+    {\Huge \scshape \textbf{Xiyuan GUO}} \\ \vspace{8pt}
+    Physics and Computer Science Double Major, University of Virginia \\ \vspace{4pt}
+    \href{mailto:tommyguo024@outlook.com}{tommyguo024@outlook.com} $\vert$ (516) 474-3279 $\vert$ \href{https://xguo.info}{xguo.info} $\vert$ \href{https://github.com/xguot}{github.com/xguot}
 \end{center}
-\vspace{-10pt}
+\vspace{8pt}
 
-% Education
+% --- Scientific Focus ---
+\section{RESEARCH FOCUS}
+\noindent Computational imaging; density functional theory (DFT); longitudinal measurement and missing data; Bayesian statistics; mathematical matrix calculus; physics-informed neural networks (PINN); reproducible statistical software; interdisciplinary computational science.
+
+% --- Education ---
 \section{EDUCATION}
-  \resumeSubHeadingListStart
-    \resumeHeading
-      {\textbf{University of Virginia}}{Charlottesville, VA --- Sept 2024 -- May 2028 (Expected)}
-    \item[] \small \textbf{Degree:} Double Major in Behavioral Neuroscience and Computer Science --- GPA: 3.89/4.00 
-  \resumeSubHeadingListEnd
+\cvheading{University of Virginia}{Expected May 2028}{B.S., Physics and Computer Science}{Charlottesville, VA}
+\begin{cvitemize}
+    \item \textbf{GPA:} 3.89/4.00
+\end{cvitemize}
 
-% Professional Experience
-\section{PROFESSIONAL EXPERIENCE}
-  \resumeSubHeadingListStart
-    \resumeHeading{\textbf{Research Software Engineer, UVA (Prof. Liqin Ke's Group)}}{Charlottesville, VA --- Oct 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Applied quantum mechanics principles to engineer complex Density Functional Theory (DFT) reconstruction algorithms, 
-        bridging theoretical atomic modeling with robust software implementations to accurately catalog electronic material properties.}
-        \resumeItem{Engineered a cloud-native machine learning pipeline utilizing Go and Next.js, 
-        enabling global academic collaborators to securely share specialized datasets and execute pre-trained predictive models.}
-        \resumeItem{Created immersive, browser-based data visualizations using Three.js and JSmol, 
-        generating interactive 3D atomic models and Kiviat diagrams to facilitate the real-time structural inspection and validation.}
-      \resumeItemListEnd
-    \vspace{2pt}
-    \resumeHeading{\textbf{Machine Learning Assistant, Yale (Prof. Mengxia Liu's Group)}}{New Haven, CT --- Feb 2026 -- Present}
-      \resumeItemListStart
-        \resumeItem{Formulated a deep unrolled ADMM framework to solve ill-posed inverse problems in computational imaging, 
-        reconstructing multi-dimensional data encompassing spatial, spectral, and full-Stokes polarization domains.}
-        \resumeItem{Engineered a specialized PyTorch pipeline utilizing a custom convolutional U-Net architecture as a learned proximal operator, 
-        specifically designed to mitigate non-Gaussian hardware sensor noise and yielding a 4.5 dB increase in PSNR.}
-        \resumeItem{Implemented rigorous physics-informed constraints within deep learning optimization loops, 
-        mathematically grounding vectorial Stokes parameter representations utilizing complex numbers, trigonometric formulations, and 3D Poincaré sphere mappings.}
-      \resumeItemListEnd
-    \vspace{2pt}
-    \resumeHeading{\textbf{Quantitative Researcher, UVA (Prof. Xin Cynthia Tong's BAL Lab)}}{Charlottesville, VA --- Apr 2026 -- Present}
-      \resumeItemListStart
-        \resumeItem{Engineered a mathematical framework for multivariate longitudinal missing data imputation that enforces the Law of Total Variation, 
-        mitigating structural covariance bias inherent in unconstrained predictive machine learning models.}
-        \resumeItem{Formulated a Lagrange-constrained optimization engine, deriving custom matrix calculus gradients from first principles 
-        to mathematically project non-parametric Random Forest estimates onto a positive-semidefinite (PSD) manifold.}
-        \resumeItem{Architected a custom high-performance C++17 gradient descent solver via RcppArmadillo to iteratively evaluate dual Lagrangian multipliers, 
-        ensuring the final global variance of the imputed dataset converges to strict theoretical asymptotic expectations.}
-      \resumeItemListEnd
-    \vspace{2pt}
-    \resumeHeading{\textbf{Network Science Intern, UVA Biocomplexity Institute}}{Charlottesville, VA --- May 2026 -- Present}
-      \resumeItemListStart
-        \resumeItem{Formulated massive-scale network simulations to dynamically model the stochastic spread of viral pathogens (e.g., COVID-19 and Ebola), 
-        implementing SEIR compartmental cascade models to capture heterogeneous transmission dynamics.}
-        \resumeItem{Engineered attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways, 
-        leveraging spatiotemporal message-passing frameworks to extract predictive topological features from dynamic contact networks.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+% --- Grants & Fellowships ---
+\section{GRANTS AND FELLOWSHIPS}
+\begin{cvitemize}
+    \item \textbf{Double Hoo Research Grant}, University of Virginia \hfill \textit{2026} \\
+    \small{Secured competitive grant funding to drive independent, interdisciplinary computational research alongside graduate mentorship.}
+\end{cvitemize}
 
-% Projects
-\section{PROJECTS}
-  \resumeSubHeadingListStart
-    \resumeHeading{\textbf{Creator \& Lead Maintainer}, difi (Go, Bubble Tea)}{Dec 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Engineered a high-performance Go-based Git diff terminal user interface utilizing the Bubble Tea framework to streamline version control workflows, 
-        achieving official Homebrew Core inclusion, 342+ GitHub stars, and a \#5 ranking on the Hacker News front page.}
-      \resumeItemListEnd
-    \resumeHeading{\textbf{Creator \& Lead Developer}, sanjaya (Python, Playwright, Scrapy)}{May 2026 -- Present}
-      \resumeItemListStart
-        \resumeItem{Engineered an automated academic literature extraction pipeline utilizing the OpenAlex Academic Graph API, Scrapy, and Playwright to extract bilingual data, 
-        exporting structured .CSV and .JSON datasets for downstream interdisciplinary research applications.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+% --- Research Experience ---
+\section{PROFESSIONAL RESEARCH EXPERIENCE}
 
-% Awards & Honors
-\section{AWARDS \& HONORS}
-    \vspace{2pt}
- \resumeItemListStart
-    \item \small{\textbf{Double Hoo Research Award:} Secured competitive grant funding to drive independent, 
-    interdisciplinary computational research.}
-    \item \small{\textbf{Academic Honors:} USA Computing Olympiad (USACO) Silver Division; 
-    UVA Dean's List of Distinguished Students.}
- \resumeItemListEnd
+\cvheading{Research Assistant}{Apr 2026 -- Present}{UVA BAL Lab (Prof. Xin Cynthia Tong's Group)}{Charlottesville, VA}
+\begin{cvitemize}
+    \item Formulating a quantum-inspired psychometric framework utilizing Hilbert-space probability models to map how individuals transition from cognitive uncertainty to commitment across repeated longitudinal measurements.
+    \item Integrating construct validity and experience-sampling data with simulation-based validation to computationally formalize psychological constructs, including cognitive fluidity, ambivalence, crystallization, and re-fluidization.
+    \item Engineered a mathematical framework for multivariate longitudinal missing data imputation that enforces the Law of Total Variation, mitigating structural covariance bias inherent in unconstrained predictive machine learning models.
+    \item Developed a custom gradient descent solver to iteratively evaluate dual Lagrangian multipliers, ensuring the final global variance of imputed datasets converges to strict theoretical asymptotic expectations; implemented in C++17 via RcppArmadillo.
+\end{cvitemize}
 
-% Certifications & Skills
-\section{CERTIFICATIONS \& SKILLS}
-    \vspace{2pt}
- \resumeItemListStart
-    \item \small{\textbf{Math \& Science:} Quantum Mechanics, Density Functional Theory (DFT), 
-    Linear \& Tensor Algebra, Real Analysis, ODEs}
-    \item \small{\textbf{Machine Learning \& AI:} PyTorch, TensorFlow, Keras, JAX, Scikit-Learn, 
-    XGBoost, Pandas, NumPy, OpenCV, RcppArmadillo}
-    \item \small{\textbf{DevOps \& Cloud:} Linux (RHEL/Fedora), AWS (EC2, S3), Docker, Kubernetes, 
-    CUDA, Slurm HPC, Git, CI/CD, Supabase, Sway, Nvim}
-    \item \small{\textbf{Frameworks \& Web:} React, Next.js, SvelteKit, Node.js, FastAPI, 
-    Bubble Tea, GraphQL, REST APIs, TailwindCSS}
-    \item \small{\textbf{Languages:} Python, C/C++, Rust, Go, TypeScript, JavaScript, R, Julia, 
-    SQL, Lua, Bash, Java, \LaTeX}
-    \item \small{\textbf{Certifications:} AWS Certified AI Practitioner, 
-    AWS Certified Cloud Practitioner}
- \resumeItemListEnd
+\cvheading{Research Assistant}{Feb 2026 -- Present}{Yale University (Prof. Mengxia Liu's Group)}{New Haven, CT}
+\begin{cvitemize}
+    \item Formulated a deep unrolled ADMM framework to solve ill-posed inverse problems in computational imaging, reconstructing multi-dimensional data encompassing spatial, spectral, and full-Stokes polarization domains.
+    \item Implemented rigorous physics-informed constraints within deep learning optimization loops, mathematically grounding vectorial Stokes parameter representations utilizing complex numbers, trigonometric formulations, and 3D Poincaré sphere mappings.
+    \item Engineered a specialized PyTorch pipeline utilizing a custom convolutional U-Net architecture as a learned proximal operator, specifically designed to mitigate non-Gaussian hardware sensor noise and yielding a 4.5 dB increase in PSNR.
+\end{cvitemize}
+
+\cvheading{Research Assistant}{Oct 2025 -- Present}{UVA (Prof. Liqin Ke's Group)}{Charlottesville, VA}
+\begin{cvitemize}
+    \item Applied quantum mechanics principles to engineer complex Density Functional Theory (DFT) reconstruction algorithms, bridging theoretical atomic modeling with robust software implementations to accurately catalog electronic material properties.
+    \item Created immersive, browser-based data visualizations using Three.js and JSmol, generating interactive 3D atomic models and Kiviat diagrams to facilitate real-time structural inspection and validation.
+    \item Engineered a cloud-native machine learning pipeline utilizing Go and Next.js, enabling global academic collaborators to securely share specialized datasets and execute pre-trained predictive models.
+\end{cvitemize}
+
+\cvheading{Research Intern}{May 2026 -- Present}{UVA Biocomplexity Institute}{Charlottesville, VA}
+\begin{cvitemize}
+    \item Formulated massive-scale network simulations to dynamically model the stochastic spread of viral pathogens (e.g., COVID-19 and Ebola), implementing SEIR compartmental cascade models to capture heterogeneous transmission dynamics.
+    \item Engineered attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways, leveraging spatiotemporal message-passing frameworks to extract predictive topological features from dynamic contact networks.
+\end{cvitemize}
+
+% --- Open-Source Software ---
+\section{OPEN SOURCE SOFTWARE}
+\begin{cvitemize}
+    \item \textbf{smriti:} R package for automated longitudinal missing data imputation (available on CRAN). Executes a three-phase architecture combining missForest initialization with a custom C++ Lagrangian projection engine to strictly preserve the structural variance of the target covariance manifold.
+    \item \textbf{sanjaya:} Automated academic literature extraction pipeline utilizing the OpenAlex Academic Graph API, Scrapy, and Playwright to extract bilingual data, exporting structured CSV/JSON datasets for downstream interdisciplinary research.
+    \item \textbf{difi:} High-performance Go-based Git diff terminal user interface utilizing the Bubble Tea framework to streamline version control workflows; achieved official Homebrew Core inclusion, 342+ GitHub stars, and a \#5 ranking on Hacker News.
+\end{cvitemize}
+
+% --- Awards ---
+\section{HONORS AND AWARDS}
+\begin{cvitemize}
+    \item \textbf{Dean's List of Distinguished Students}, University of Virginia
+    \item \textbf{Silver Division}, USA Computing Olympiad (USACO)
+\end{cvitemize}
+
+% --- Skills ---
+\section{TECHNICAL SKILLS}
+\begin{cvitemize}
+    \item \textbf{Math \& Physics} Quantum Mechanics, Density Functional Theory (DFT), Linear \& Tensor Algebra, Real Analysis, ODEs
+    \item \textbf{Machine Learning \& AI:} PyTorch, TensorFlow, Keras, JAX, Scikit-Learn, XGBoost, Pandas, NumPy, OpenCV, RcppArmadillo
+    \item \textbf{Languages:} Python, C/C++, Rust, Go, TypeScript, R, Julia, SQL, Lua, Bash, Java, \LaTeX
+    \item \textbf{Infrastructure \& Cloud:} Linux (RHEL/Fedora), AWS (EC2, S3), Docker, Kubernetes, CUDA, Slurm HPC, Git
+\end{cvitemize}
+
+% --- Service ---
+\section{COMMUNITY SERVICE}
+\cvheading{Volunteer Firefighter}{2022 -- 2024}{Plainfield Fire Department}{Plainfield}
+\begin{cvitemize}
+    \item Responded to over 200 emergency medical, fire, and rescue calls annually, operating effectively in high-stress environments to provide critical incident mitigation and community support.
+\end{cvitemize}
 
 \end{document}
