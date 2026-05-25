@@ -6,43 +6,51 @@
 	const experience = [
 		{
 			date: 'MAY 2026 — PRESENT',
-			title: 'Network Science Intern',
+			title: 'Research Intern',
 			company: 'UVA Biocomplexity Institute',
 			description:
-				'Formulating massive-scale network simulations to model the stochastic spread of viral pathogens. Engineering attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways across dynamic contact networks.',
+				'Formulating massive-scale network simulations to model the stochastic spread of viral pathogens. Engineering attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways using spatiotemporal message-passing frameworks.',
 			skills: ['GNN', 'Network Science', 'Simulation', 'Bayesian Data Science', 'HPC'],
 			link: 'https://biocomplexity.virginia.edu/'
 		},
 		{
 			date: 'APR 2026 — PRESENT',
-			title: 'Quantitative Researcher',
+			title: 'Research Assistant',
 			company: 'UVA (BAL Lab)',
 			description:
-				'Engineering a mathematical framework for longitudinal missing data imputation. Formulated a novel Lagrange-constrained optimization engine and architected a high-performance C++17 gradient descent solver to ensure global variance convergence.',
-			skills: ['C++', 'RcppArmadillo', 'Statistics', 'Optimization', 'Manifold Mapping'],
+				'Formulating a quantum-inspired psychometric framework utilizing Hilbert-space probability models. Engineering a mathematical framework for multivariate longitudinal missing data imputation that enforces the Law of Total Variation and architecting a C++17 Lagrangian projection engine.',
+			skills: ['C++', 'RcppArmadillo', 'Psychometrics', 'Optimization', 'Mathematical Statistics'],
 			link: 'https://xtong.org/'
 		},
 		{
 			date: 'FEB 2026 — PRESENT',
-			title: 'Machine Learning Assistant',
+			title: 'Research Assistant',
 			company: 'Yale (Liu\'s Group)',
 			description:
-				'Developing a deep unrolled ADMM framework for inverse problems in computational imaging. Engineering a specialized PyTorch pipeline with custom U-Net architectures and physics-informed constraints for multi-dimensional data reconstruction.',
-			skills: ['PyTorch', 'ML', 'ADMM', 'Computer Vision', 'Physics-Informed Neural Networks'],
+				'Developing a deep unrolled ADMM framework for inverse problems in computational imaging. Engineering a specialized PyTorch pipeline with custom U-Net architectures and physics-informed constraints for multi-dimensional spatial and spectral data reconstruction.',
+			skills: ['PyTorch', 'ML', 'ADMM', 'Computational Imaging', 'Physics-Informed Neural Networks'],
 			link: 'https://liu.yale.edu/'
 		},
 		{
 			date: 'OCT 2025 — PRESENT',
-			title: 'Research Software Engineer',
+			title: 'Research Assistant',
 			company: 'UVA (Ke\'s Group)',
 			description:
-				'Orchestrating the deployment of a high-availability full-stack research platform. Applying quantum mechanics principles for DFT reconstruction algorithms and engineering a cloud-native ML pipeline using Go and Next.js.',
-			skills: ['Go', 'Next.js', 'RHEL', 'Three.js', 'DFT', 'Machine Learning'],
+				'Applying quantum mechanics principles to engineer complex Density Functional Theory (DFT) reconstruction algorithms. Orchestrating a cloud-native ML pipeline using Go and Next.js and creating immersive browser-based 3D atomic visualizations.',
+			skills: ['Go', 'Next.js', 'DFT', 'Three.js', 'Quantum Mechanics', 'Machine Learning'],
 			link: 'https://www.virginia.edu/'
 		}
 	];
 
 	const projects = [
+		{
+			title: 'smriti — Longitudinal Imputation Engine',
+			description:
+				'An R package for automated longitudinal missing data imputation. Executes a three-phase architecture combining missForest initialization with a custom C++ Lagrangian projection engine to strictly preserve the structural variance of the target covariance manifold.',
+			tags: ['R', 'C++', 'RcppArmadillo', 'Statistics', 'CRAN'],
+			link: 'https://github.com/xguot/smriti',
+			thumbnail: '/statue-demo.gif'
+		},
 		{
 			title: 'difi — Git Diff Review Tool',
 			description:
@@ -55,15 +63,12 @@
 			hnLink: 'https://news.ycombinator.com/item?id=46870917'
 		},
 		{
-			title: 'zsweep — Modern Minesweeper',
+			title: 'sanjaya — Academic Graph Pipeline',
 			description:
-				'A performance-focused reimagining of Minesweeper with a "Monkeytype" aesthetic. Engineered for flow-state with native Vim-bindings (h/j/k/l), real-time 3BV/s metrics, and a global leaderboard integrated via Supabase for competitive play.',
-			tags: ['Svelte', 'TypeScript', 'Vim', 'Supabase', 'Full-Stack'],
-			link: 'https://zsweep.com',
-			stars: 59,
-			thumbnail: '/zsweep-demo.gif',
-			hnRanking: 6,
-			hnLink: 'https://news.ycombinator.com/item?id=46667849'
+				'An automated academic literature extraction pipeline utilizing the OpenAlex Academic Graph API, Scrapy, and Playwright. Extracts bilingual data and exports structured CSV/JSON datasets for downstream interdisciplinary research applications.',
+			tags: ['Python', 'Scrapy', 'Playwright', 'Data Engineering', 'Academic Graph'],
+			link: 'https://github.com/xguot/sanjaya',
+			thumbnail: '/zsweep-demo.gif'
 		},
 		{
 			title: 'Neovim — Contributor',
@@ -73,15 +78,6 @@
 			link: 'https://github.com/neovim/neovim/pulls?q=is%3Apr+author%3Axguot+',
 			stars: '90k+',
 			thumbnail: '/nvim-demo.png'
-		},
-		{
-			title: 'Statue — Core Contributor',
-			description:
-				'Contributed critical UI infrastructure to a "wicked-fast" SvelteKit-based Static Site Generator. Engineered the CodePlayer and XMLView components for high-performance data rendering and implemented various core patches to stabilize the declarative component model.',
-			tags: ['SvelteKit', 'TailwindCSS', 'Open Source', 'SSG'],
-			link: 'https://github.com/accretional/statue',
-			stars: 158,
-			thumbnail: '/statue-demo.gif'
 		}
 	];
 
