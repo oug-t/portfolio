@@ -5,20 +5,11 @@
 
 	const experience = [
 		{
-			date: 'MAY 2026 — PRESENT',
-			title: 'Research Intern',
-			company: 'UVA Biocomplexity Institute',
-			description:
-				'Formulating massive-scale network simulations to model the stochastic spread of viral pathogens. Engineering attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation pathways using spatiotemporal message-passing frameworks.',
-			skills: ['GNN', 'Network Science', 'Simulation', 'Bayesian Data Science', 'HPC'],
-			link: 'https://biocomplexity.virginia.edu/'
-		},
-		{
 			date: 'APR 2026 — PRESENT',
 			title: 'Research Assistant',
 			company: 'UVA (BAL Lab)',
 			description:
-				'Formulating a quantum-inspired psychometric framework utilizing Hilbert-space probability models. Engineering a mathematical framework for multivariate longitudinal missing data imputation that enforces the Law of Total Variation and architecting a C++17 Lagrangian projection engine.',
+				'Formulating a quantum-inspired psychometric framework utilizing Hilbert-space probability models to map how individuals transition from cognitive uncertainty to commitment across repeated longitudinal measurements. Engineering a multivariate longitudinal missing data imputation framework that enforces the Law of Total Variation, with a custom Lagrange-constrained C++17 gradient descent solver implemented via RcppArmadillo.',
 			skills: ['C++', 'RcppArmadillo', 'Psychometrics', 'Optimization', 'Mathematical Statistics'],
 			link: 'https://xtong.org/'
 		},
@@ -27,8 +18,8 @@
 			title: 'Research Assistant',
 			company: 'Yale (Liu\'s Group)',
 			description:
-				'Developing a deep unrolled ADMM framework for inverse problems in computational imaging. Engineering a specialized PyTorch pipeline with custom U-Net architectures and physics-informed constraints for multi-dimensional spatial and spectral data reconstruction.',
-			skills: ['PyTorch', 'ML', 'ADMM', 'Computational Imaging', 'Physics-Informed Neural Networks'],
+				'Developing a deep unrolled ADMM framework for blind computational polarimetry, reconstructing the full Stokes polarization cube from single diffuser speckle measurements. Engineering a custom PyTorch U-Net pipeline with rigorous physics-informed constraints using vectorial Stokes parameter representations and Lorentz cone orthogonal projections, yielding 4.5 dB PSNR improvement over baseline methods.',
+			skills: ['PyTorch', 'ADMM', 'Computational Imaging', 'Physics-Informed Neural Networks', 'Polarimetry'],
 			link: 'https://liu.yale.edu/'
 		},
 		{
@@ -36,9 +27,18 @@
 			title: 'Research Assistant',
 			company: 'UVA (Ke\'s Group)',
 			description:
-				'Applying quantum mechanics principles to engineer complex Density Functional Theory (DFT) reconstruction algorithms. Orchestrating a cloud-native ML pipeline using Go and Next.js and creating immersive browser-based 3D atomic visualizations.',
+				'Applying quantum mechanics principles to engineer Density Functional Theory (DFT) and Dynamical Mean-Field Theory (DMFT) reconstruction algorithms for frontier rare-earth materials research. Architecting a cloud-native ML pipeline using Go and Next.js backed by DOE-BES and DOE-ARPA-E funding, and creating immersive browser-based 3D atomic visualizations with Three.js and JSmol.',
 			skills: ['Go', 'Next.js', 'DFT', 'Three.js', 'Quantum Mechanics', 'Machine Learning'],
 			link: 'https://www.virginia.edu/'
+		},
+		{
+			date: 'MAY 2026 — PRESENT',
+			title: 'Research Intern',
+			company: 'UVA Biocomplexity Institute',
+			description:
+				'Formulating massive-scale network simulations modeling stochastic viral pathogen spread via SEIR compartmental cascade models. Engineering attention-based Graph Neural Network (GNN) architectures to predict multi-hop epidemic propagation using spatiotemporal message-passing frameworks on HPC infrastructure.',
+			skills: ['GNN', 'Network Science', 'Simulation', 'Bayesian Data Science', 'HPC'],
+			link: 'https://biocomplexity.virginia.edu/'
 		}
 	];
 
@@ -140,8 +140,8 @@
 		<span class="text-cloud font-medium">Muay Thai</span> gym, training calisthenics, or behind a
 		drum kit. I’m an avid off-roader in my
 		<span class="text-cloud font-medium">Tacoma TRD Pro</span>
-		and a heavy consumer of specialty coffee. I am currently completing my double major in Computer Science
-		and Mathematics at the
+		and a heavy consumer of specialty coffee. I am currently completing my double major in Physics
+		and Computer Science (Expected May 2028) at the
 		<span class="text-cloud font-medium">University of Virginia</span>.
 	</p>
 </section>
