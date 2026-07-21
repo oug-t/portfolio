@@ -1,0 +1,142 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Packages
+\usepackage[left=0.3in, right=0.3in, top=0.3in, bottom=0.3in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{microtype} 
+
+% Hyperlinks
+\hypersetup{hidelinks}
+
+% Section Formatting 
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom lists 
+\newcommand{\resumeSubHeadingListStart}{\begin{list}{}{
+    \setlength{\leftmargin}{0in}
+    \setlength{\labelwidth}{0pt}
+    \setlength{\labelsep}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{2pt} 
+    \setlength{\parsep}{0pt}
+}}
+\newcommand{\resumeSubHeadingListEnd}{\end{list}}
+
+% Pulled bullets up against their own title, but relaxed the space at the bottom
+\newcommand{\resumeItemListStart}{
+  \vspace{-4pt}
+  \begin{list}{\textbullet}{
+    \setlength{\leftmargin}{0.15in}
+    \setlength{\labelwidth}{0.15in}
+    \setlength{\labelsep}{0.05in}
+    \setlength{\itemsep}{0pt} 
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+}}
+\newcommand{\resumeItemListEnd}{\end{list}\vspace{-1pt}}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% Heading structure
+\newcommand{\resumeHeading}[2]{
+  \item[]
+    \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-2pt} 
+}
+
+\begin{document}
+
+% Heading
+\begin{center}
+    {\Huge \scshape \textbf{Xiyuan GUO}} \\ \vspace{4pt}
+    \small \href{mailto:mhn4xq@virginia.edu}{mhn4xq@virginia.edu} --- (516) 474-3279 --- \href{https://xguo.info}{xguo.info} --- \href{https://github.com/xguot}{github.com/xguot}
+\end{center}
+\vspace{-10pt}
+
+% Education
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeHeading
+      {\textbf{University of Virginia}}{Charlottesville, VA --- Sept 2024 -- May 2027 (Expected)}
+    \item[] \small \textbf{Degree:} Bachelor of Arts in Computer Science and Physics --- GPA: 3.89/4.00
+    \item[] \small \textbf{Independent Study:} Quantum Information (Caltech Ph219A Curriculum), Adv. Quantum Mechanics (Sakurai)
+  \resumeSubHeadingListEnd
+
+% Professional Experience
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeHeading{\textbf{Optical Physics Assistant, Yale (Liu's Group)}}{New Haven, CT --- Feb 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Developing a constrained ADMM algorithmic framework for blind computational polarimetry. Evaluating ongoing reconstructions of the full Stokes polarization cube ($S_0, S_1, S_2, S_3$) from a single optical diffuser speckle measurement.}
+      \resumeItem{Bypassing an infinitely underdetermined bottleneck utilizing Tikhonov warm-starts. Applying the Woodbury matrix identity to analytically reduce massive Gram matrix inversions into element-wise divisions using power spectra sums.}
+      \resumeItem{Integrating strict physical constraints within optimization loops executing exact Lorentz cone orthogonal projections. This mathematically bounds recovered polarization components by total intensity, ensuring viable states.}
+      \resumeItem{Mitigating frequency-domain cross-talk via intensity-weighted group soft-thresholding. Calibrating static optical system operators using spatial Gram-Schmidt orthogonalization to establish orthogonal bases, preserving power ratios.}
+    \resumeItemListEnd
+
+    \vspace{4pt}
+
+    \resumeHeading{\textbf{Network Science Intern, UVA Biocomplexity Institute}}{Charlottesville, VA --- May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Formulated massive-scale network simulations modeling stochastic viral pathogen spread, implementing SEIR compartmental cascade models to capture heterogeneous transmission dynamics.}
+        \resumeItem{Engineered attention-based Graph Neural Network (GNN) architectures predicting multi-hop epidemic propagation, leveraging spatiotemporal message-passing frameworks to extract latent topological features from dynamic contact networks.}
+        \resumeItem{Collaborated within a transdisciplinary initiative to scale core epidemiological algorithms, bridging high-performance Bayesian data science with empirical public health parameters to inform global disaster resilience.}
+      \resumeItemListEnd
+
+    \vspace{4pt}
+
+    \resumeHeading{\textbf{Research Software Engineer, UVA (Ke's Group)}}{Charlottesville, VA --- Oct 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected a highly available web database and full-stack research platform on RHEL virtual machines, backed by DOE-BES and DOE-ARPA-E funding to drive frontier rare-earth materials research.}
+        \resumeItem{Integrated massive-scale Crystallographic Information File (CIF) data with complex Density Functional Theory (DFT) and Dynamical Mean-Field Theory (DMFT) quantum mechanics calculations.}
+        \resumeItem{Engineered cloud-native machine learning pipelines utilizing Go and Next.js to actively predict key material properties, including magnetic anisotropy, magnetic moments, Curie temperature, and crystallization.}
+        \resumeItem{Created immersive browser-based visualizations using Three.js and JSmol, generating interactive 3D atomic models for the real-time structural inspection of theoretical computational outputs.}
+      \resumeItemListEnd
+
+    \vspace{4pt}
+
+    \resumeHeading{\textbf{Quantitative Researcher, UVA (BAL Lab)}}{Charlottesville, VA --- May 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered a mathematical framework for multivariate longitudinal missing data imputation enforcing the Law of Total Variation, mitigating severe structural covariance bias in unconstrained predictive models.}
+        \resumeItem{Formulated a Lagrange-constrained C++17 gradient descent engine, deriving custom matrix calculus gradients to project non-parametric estimates onto a smooth Riemannian positive-semidefinite (PSD) manifold.}
+        \resumeItem{Executed comprehensive simulation studies comparing advanced deep generative imputation architectures—including score-based diffusion (CSDI), adversarial networks (GAIN), and transformers (SAITS)—against traditional FIML and TSRE baselines.}
+        \resumeItem{Bounded highly non-convex search optimization spaces using robust statistical estimators, scaling dense matrix operations across Slurm HPC clusters for massive Monte Carlo simulations.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Awards & Honors
+\section{AWARDS \& HONORS}
+    \vspace{2pt}
+ \resumeItemListStart
+    \item \small{\textbf{Double Hoo Research Award:} Secured competitive grant funding to drive independent, 
+    interdisciplinary computational research.}
+    \item \small{\textbf{Academic Honors:} USA Computing Olympiad (USACO) Silver Division; 
+    UVA Dean's List of Distinguished Students.}
+    \item \small{\textbf{Open-Source Recognition:} Achieved Hacker News Front Page (\#5, \#6), 
+    Homebrew Core inclusion, 
+    and 342+ GitHub stars for \texttt{difi}.}
+ \resumeItemListEnd
+
+% Certifications & Skills
+% Certifications & Skills
+\section{CERTIFICATIONS \& SKILLS}
+    \vspace{2pt}
+ \resumeItemListStart
+    \item \small{\textbf{Math \& Science:} Quantum Mechanics, Quantum Error Correction, Optics, Density Functional Theory  Tensor Algebra, Topology}
+    \item \small{\textbf{Machine Learning \& AI:} PyTorch, TensorFlow, Keras, JAX, Scikit-Learn, XGBoost, Pandas, NumPy, OpenCV, RcppArmadillo}
+    \item \small{\textbf{Infrastructure \& Tools:} Linux (RHEL/Fedora), AWS (EC2, S3), Docker, Kubernetes, CUDA, Slurm HPC, Git, CI/CD, Vim, Emacs}
+    \item \small{\textbf{Frameworks \& Web:} React, Next.js, SvelteKit, Node.js, FastAPI, Bubble Tea, GraphQL, REST APIs, TailwindCSS}
+    \item \small{\textbf{Languages:} Python, C/C++, Rust, Go, TypeScript, JavaScript, R, Julia, SQL, Lua, Bash, Java, \LaTeX}
+    \item \small{\textbf{Certifications:} AWS Certified AI Practitioner, AWS Certified Cloud Practitioner}
+ \resumeItemListEnd
+
+\end{document}
